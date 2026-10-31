@@ -1,0 +1,1618 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Dr. Payal Pratik Kikani — Vedic Astrology, Pranic Healing &amp; Wealth Advisory</title>
+<meta name="description" content="Dr. Payal Pratik Kikani — PhD in Astrology, Pranic Healer, Wealth & Tax Advisor in Ahmedabad. Free Prashna Kundli guidance every Monday & Thursday. 100% free, zero ads, strict data privacy." />
+<meta name="theme-color" content="#05060d" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' font-weight='bold' fill='%23fff' text-anchor='middle'%3EPK%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =====================================================================
+   1. TOKENS & RESET
+   ===================================================================== */
+:root{
+  --bg:#05060d;
+  --glass:rgba(255,255,255,.045);
+  --stroke:rgba(255,255,255,.10);
+  --stroke-2:rgba(255,255,255,.18);
+  --text:#eef1f8;
+  --muted:#a3adc2;
+  --violet:#8b5cf6;
+  --cyan:#22d3ee;
+  --gold:#f7c948;
+  --pink:#ec4899;
+  --green:#34d399;
+  --red:#fb7185;
+  --radius:22px;
+  --radius-sm:14px;
+  --shadow:0 26px 60px -24px rgba(0,0,0,.85);
+  --max:1180px;
+  --ease:cubic-bezier(.22,.75,.28,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:'Outfit','Noto Sans Gujarati',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+html[lang="gu"] body{line-height:1.8}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+input,select,textarea{font:inherit}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:10px}
+::selection{background:rgba(139,92,246,.45);color:#fff}
+
+/* =====================================================================
+   2. BACKGROUND
+   ===================================================================== */
+.bg{
+  position:fixed;inset:0;z-index:-2;overflow:hidden;pointer-events:none;
+  background:
+    radial-gradient(1100px 720px at 12% -12%,rgba(139,92,246,.22),transparent 62%),
+    radial-gradient(920px 640px at 94% 2%,rgba(34,211,238,.15),transparent 60%),
+    radial-gradient(900px 720px at 50% 112%,rgba(236,72,153,.14),transparent 62%),
+    #05060d;
+}
+.bg::before{
+  content:"";position:absolute;inset:-25%;
+  background-image:
+    linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:64px 64px;
+  -webkit-mask-image:radial-gradient(circle at 50% 28%,#000 0%,transparent 72%);
+  mask-image:radial-gradient(circle at 50% 28%,#000 0%,transparent 72%);
+}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.42;animation:drift 22s ease-in-out infinite}
+.orb--1{width:380px;height:380px;background:#8b5cf6;top:-90px;left:-70px}
+.orb--2{width:330px;height:330px;background:#22d3ee;top:42%;right:-110px;animation-delay:-7s}
+.orb--3{width:300px;height:300px;background:#ec4899;bottom:-90px;left:36%;animation-delay:-14s}
+@keyframes drift{
+  0%,100%{transform:translate3d(0,0,0) scale(1)}
+  50%{transform:translate3d(34px,-44px,0) scale(1.14)}
+}
+
+/* =====================================================================
+   3. LAYOUT HELPERS
+   ===================================================================== */
+.container{width:100%;max-width:var(--max);margin-inline:auto;padding-inline:22px}
+.section{padding:92px 0;position:relative}
+.glass{
+  background:linear-gradient(160deg,rgba(255,255,255,.075),rgba(255,255,255,.022));
+  border:1px solid var(--stroke);
+  border-radius:var(--radius);
+  -webkit-backdrop-filter:blur(20px) saturate(150%);
+  backdrop-filter:blur(20px) saturate(150%);
+  box-shadow:var(--shadow);
+}
+.grad{
+  background:linear-gradient(115deg,#a78bfa 0%,#22d3ee 45%,#f472b6 100%);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--cyan);
+  padding:7px 16px;border-radius:999px;
+  border:1px solid rgba(34,211,238,.28);
+  background:rgba(34,211,238,.07);
+  margin-bottom:18px;
+}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+.section__title{
+  font-size:clamp(1.85rem,4.2vw,2.9rem);
+  line-height:1.16;letter-spacing:-.02em;font-weight:800;
+  margin:0 0 14px;
+}
+.section__lead{color:var(--muted);max-width:64ch;margin:0 0 40px;font-size:1.02rem}
+
+/* =====================================================================
+   4. BUTTONS
+   ===================================================================== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:14px 27px;border-radius:999px;border:1px solid transparent;
+  font-weight:600;font-size:.97rem;letter-spacing:.01em;
+  cursor:pointer;transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s,color .3s,border-color .3s;
+  white-space:nowrap;user-select:none;
+}
+.btn:active{transform:scale(.975)}
+.btn--primary{
+  background:linear-gradient(135deg,var(--violet),var(--pink) 92%);
+  color:#fff;
+  box-shadow:0 14px 34px -14px rgba(139,92,246,.95),0 0 0 1px rgba(255,255,255,.08) inset;
+}
+.btn--primary:hover{transform:translateY(-2px);box-shadow:0 22px 46px -14px rgba(236,72,153,.85)}
+.btn--ghost{background:rgba(255,255,255,.05);border-color:var(--stroke);color:var(--text)}
+.btn--ghost:hover{background:rgba(255,255,255,.11);border-color:var(--stroke-2);transform:translateY(-2px)}
+.btn--sm{padding:10px 20px;font-size:.88rem}
+.btn--block{width:100%}
+.btn[disabled]{opacity:.6;cursor:not-allowed;transform:none!important}
+.btn.is-loading{pointer-events:none;color:transparent!important;position:relative}
+.btn.is-loading::after{
+  content:"";position:absolute;width:19px;height:19px;border-radius:50%;
+  border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;
+  animation:spin .7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* =====================================================================
+   5. NAVBAR
+   ===================================================================== */
+.nav{
+  position:fixed;inset:0 0 auto 0;z-index:100;
+  transition:background .35s,border-color .35s,backdrop-filter .35s,box-shadow .35s;
+  border-bottom:1px solid transparent;
+}
+.nav--scrolled{
+  background:rgba(7,8,18,.78);
+  -webkit-backdrop-filter:blur(20px) saturate(160%);
+  backdrop-filter:blur(20px) saturate(160%);
+  border-bottom-color:var(--stroke);
+  box-shadow:0 12px 40px -22px rgba(0,0,0,.9);
+}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;gap:20px;height:76px}
+.brand{display:flex;align-items:center;gap:13px;min-width:0}
+.brand__mark{
+  flex:0 0 auto;width:44px;height:44px;border-radius:13px;
+  display:grid;place-items:center;font-weight:800;font-size:.92rem;letter-spacing:.02em;color:#fff;
+  background:linear-gradient(135deg,var(--violet),var(--pink));
+  box-shadow:0 10px 26px -10px rgba(139,92,246,.95),0 0 0 1px rgba(255,255,255,.12) inset;
+}
+.brand__text{display:flex;flex-direction:column;line-height:1.22;min-width:0}
+.brand__text strong{font-size:.97rem;font-weight:700;letter-spacing:-.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand__text small{font-size:.71rem;color:var(--muted);letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav__links{display:flex;align-items:center;gap:6px}
+.nav__links a:not(.btn){
+  padding:9px 13px;border-radius:999px;font-size:.89rem;font-weight:500;color:var(--muted);
+  transition:color .25s,background .25s;white-space:nowrap;
+}
+.nav__links a:not(.btn):hover{color:#fff;background:rgba(255,255,255,.07)}
+
+.lang-switch{
+  display:inline-flex;padding:4px;gap:3px;border-radius:999px;
+  border:1px solid var(--stroke);background:rgba(255,255,255,.05);flex:0 0 auto;
+}
+.lang-switch button{
+  background:none;border:0;padding:6px 13px;border-radius:999px;
+  font-size:.78rem;font-weight:700;color:var(--muted);cursor:pointer;
+  transition:background .25s,color .25s;line-height:1.4;
+}
+.lang-switch button:hover{color:#fff}
+.lang-switch button.on{background:linear-gradient(135deg,var(--violet),var(--pink));color:#fff;box-shadow:0 6px 18px -8px rgba(139,92,246,.95)}
+
+.nav__toggle{
+  display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--stroke);
+  background:rgba(255,255,255,.05);cursor:pointer;padding:0;place-items:center;
+}
+.nav__toggle span{
+  display:block;width:19px;height:2px;border-radius:2px;background:var(--text);
+  margin:3.5px auto;transition:transform .3s var(--ease),opacity .25s;
+}
+.nav__toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.nav__toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav__toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+/* =====================================================================
+   6. HERO
+   ===================================================================== */
+.hero{padding:150px 0 72px;position:relative}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:48px;align-items:center}
+.pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 15px;border-radius:999px;font-size:.8rem;font-weight:500;color:var(--muted);
+  border:1px solid var(--stroke);background:rgba(255,255,255,.045);
+  margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(2.15rem,5.4vw,3.85rem);
+  line-height:1.08;letter-spacing:-.035em;font-weight:800;margin:0 0 18px;
+}
+.hero__sub{color:var(--muted);font-size:1.06rem;max-width:56ch;margin:0 0 26px}
+.hero__sub strong{color:#fff;font-weight:600}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:32px}
+.chip{
+  font-size:.79rem;font-weight:600;letter-spacing:.02em;
+  padding:8px 14px;border-radius:999px;
+  border:1px solid var(--stroke);background:rgba(255,255,255,.05);color:#dbe2f1;
+  transition:border-color .3s,transform .3s,background .3s;
+}
+.chip:hover{border-color:rgba(139,92,246,.55);background:rgba(139,92,246,.12);transform:translateY(-2px)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:13px;margin-bottom:40px}
+.hero__stats{display:flex;flex-wrap:wrap;gap:14px}
+.stat{
+  flex:1 1 130px;padding:16px 18px;border-radius:var(--radius-sm);
+  border:1px solid var(--stroke);background:rgba(255,255,255,.035);
+}
+.stat b{display:block;font-size:1.4rem;font-weight:800;letter-spacing:-.02em;line-height:1.25}
+.stat span{font-size:.76rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+
+.hero__card{padding:28px;position:relative;overflow:hidden}
+.hero__card::before{
+  content:"";position:absolute;inset:-1px;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(150deg,rgba(139,92,246,.35),transparent 40%,rgba(34,211,238,.25));
+  -webkit-mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);
+  mask:linear-gradient(#000,#000) content-box,linear-gradient(#000,#000);
+  -webkit-mask-composite:xor;mask-composite:exclude;padding:1px;
+}
+.hero__card h3{margin:0 0 4px;font-size:1.18rem;letter-spacing:-.01em}
+.hero__card .gu{
+  font-family:'Noto Sans Gujarati',sans-serif;color:var(--gold);font-weight:600;
+  font-size:.98rem;margin:0 0 18px;line-height:1.6;
+}
+.minirow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px dashed rgba(255,255,255,.09);font-size:.9rem}
+.minirow:last-of-type{border-bottom:0}
+.minirow span{color:var(--muted)}
+.minirow b{font-weight:700;text-align:right}
+.badge-free{
+  display:inline-block;padding:4px 11px;border-radius:999px;font-size:.72rem;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;color:#04140f;
+  background:linear-gradient(135deg,#34d399,#22d3ee);
+  box-shadow:0 0 18px rgba(52,211,153,.55);
+}
+
+/* =====================================================================
+   7. CAMPAIGN
+   ===================================================================== */
+.campaign{padding:42px;position:relative;overflow:hidden;text-align:center}
+.campaign__glow{
+  position:absolute;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(139,92,246,.42),transparent 66%);
+  top:-260px;left:50%;transform:translateX(-50%);filter:blur(40px);pointer-events:none;
+}
+.campaign__gu{
+  font-family:'Noto Sans Gujarati',sans-serif;font-size:clamp(1.25rem,3.4vw,1.95rem);
+  font-weight:700;color:var(--gold);margin:0 0 8px;letter-spacing:.01em;
+  text-shadow:0 0 34px rgba(247,201,72,.4);
+}
+.campaign__en{margin:0 0 6px;font-size:clamp(1.5rem,3.6vw,2.2rem);font-weight:800;letter-spacing:-.02em}
+.campaign__sched{font-family:'Noto Sans Gujarati',sans-serif;color:var(--muted);margin:0 0 34px;font-size:1rem}
+.slots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-bottom:30px;text-align:left}
+.slots--single{grid-template-columns:minmax(0,540px);justify-content:center}
+.slotcard{
+  padding:22px;border-radius:var(--radius-sm);
+  border:1px solid var(--stroke);background:rgba(255,255,255,.04);
+  transition:border-color .3s,transform .3s var(--ease),background .3s;
+}
+.slotcard:hover{border-color:rgba(139,92,246,.5);background:rgba(139,92,246,.09);transform:translateY(-3px)}
+.slotcard__head{display:flex;align-items:center;gap:13px;margin-bottom:16px}
+.slotcard__icon{
+  width:44px;height:44px;flex:0 0 auto;border-radius:12px;display:grid;place-items:center;font-size:1.25rem;
+  background:rgba(255,255,255,.06);border:1px solid var(--stroke);
+}
+.slotcard__head strong{display:block;font-size:.98rem;letter-spacing:-.01em}
+.slotcard__head small{color:var(--muted);font-size:.78rem}
+.slotcard__count{display:flex;align-items:baseline;gap:8px;margin-bottom:11px;flex-wrap:wrap}
+.slotcard__count b{font-size:1.75rem;font-weight:800;letter-spacing:-.03em;color:var(--cyan)}
+.slotcard__count span{font-size:.8rem;color:var(--muted)}
+.bar{height:7px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}
+.bar i{
+  display:block;height:100%;width:100%;border-radius:999px;
+  background:linear-gradient(90deg,var(--cyan),var(--violet));
+  box-shadow:0 0 16px rgba(34,211,238,.65);
+  transition:width .8s var(--ease),background .4s;
+}
+.bar i.low{background:linear-gradient(90deg,#fb7185,#f7c948);box-shadow:0 0 16px rgba(251,113,133,.65)}
+.rules{
+  list-style:none;padding:0;margin:0 0 30px;
+  display:flex;flex-wrap:wrap;justify-content:center;gap:10px;
+}
+.rules li{
+  font-size:.82rem;color:#d6dced;padding:9px 16px;border-radius:999px;
+  border:1px solid var(--stroke);background:rgba(255,255,255,.045);
+}
+.rules li::before{content:"✓ ";color:var(--green);font-weight:800}
+
+/* =====================================================================
+   8. SERVICES
+   ===================================================================== */
+.services__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:22px}
+.service{
+  padding:30px 26px;display:flex;flex-direction:column;position:relative;overflow:hidden;
+  transition:transform .4s var(--ease),border-color .4s,box-shadow .4s;
+}
+.service::after{
+  content:"";position:absolute;inset:auto -40% -70% -40%;height:200px;
+  background:radial-gradient(circle,rgba(139,92,246,.35),transparent 70%);
+  opacity:0;transition:opacity .45s;pointer-events:none;
+}
+.service:hover{transform:translateY(-6px);border-color:rgba(139,92,246,.45);box-shadow:0 34px 70px -30px rgba(139,92,246,.6)}
+.service:hover::after{opacity:1}
+.service__icon{
+  width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:1.5rem;
+  margin-bottom:18px;border:1px solid var(--stroke);
+  background:linear-gradient(140deg,rgba(139,92,246,.28),rgba(34,211,238,.14));
+  box-shadow:0 12px 30px -16px rgba(139,92,246,.9);
+}
+.service h3{margin:0 0 8px;font-size:1.22rem;letter-spacing:-.02em;font-weight:700;line-height:1.3}
+.service__desc{color:var(--muted);font-size:.9rem;margin:0 0 20px}
+.price-list{list-style:none;padding:0;margin:0 0 22px;display:flex;flex-direction:column;gap:11px}
+.price-list li{
+  display:flex;align-items:flex-start;justify-content:space-between;gap:14px;
+  padding-bottom:11px;border-bottom:1px dashed rgba(255,255,255,.09);font-size:.89rem;
+}
+.price-list li:last-child{border-bottom:0;padding-bottom:0}
+.price-list .amt{font-weight:700;color:var(--gold);white-space:nowrap;font-variant-numeric:tabular-nums;flex:0 0 auto}
+.service .btn{margin-top:auto}
+.service__note{
+  font-size:.79rem;color:var(--muted);margin:14px 0 0;padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.07);line-height:1.6;
+}
+.service__note strong{color:var(--green);font-weight:600}
+.services__foot{
+  margin-top:26px;text-align:center;font-size:.9rem;color:var(--muted);
+  padding:18px 22px;border-radius:var(--radius-sm);
+  border:1px dashed rgba(255,255,255,.13);background:rgba(255,255,255,.025);
+}
+.services__foot b{color:var(--cyan);font-weight:600}
+
+.pricing-note{
+  margin:26px 0 0;font-size:.85rem;color:#e6dcb8;line-height:1.75;
+  padding:16px 22px;border-radius:var(--radius-sm);
+  border:1px solid rgba(247,201,72,.32);background:rgba(247,201,72,.07);
+}
+.pricing-note strong{color:var(--gold)}
+
+/* =====================================================================
+   9. FORMS
+   ===================================================================== */
+.apply__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.78fr);gap:26px;align-items:start}
+.form{padding:32px}
+.form h3{margin:0 0 6px;font-size:1.3rem;letter-spacing:-.02em;line-height:1.3}
+.form__hint{color:var(--muted);font-size:.87rem;margin:0 0 24px}
+.form__row{display:grid;gap:15px;margin-bottom:15px}
+.form__row--2{grid-template-columns:1fr 1fr}
+.form__row--toggle{grid-template-columns:1fr 1fr;margin-bottom:22px}
+.opt{position:relative;cursor:pointer;display:block}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt__body{
+  display:flex;flex-direction:column;gap:3px;height:100%;
+  padding:17px 18px;border-radius:var(--radius-sm);
+  border:1px solid var(--stroke);background:rgba(255,255,255,.035);
+  transition:border-color .3s,background .3s,transform .3s var(--ease),box-shadow .3s;
+}
+.opt__body strong{font-size:.94rem;font-weight:700;letter-spacing:-.01em}
+.opt__body small{font-size:.76rem;color:var(--muted)}
+.opt:hover .opt__body{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.065)}
+.opt input:checked + .opt__body{
+  border-color:rgba(139,92,246,.75);
+  background:linear-gradient(150deg,rgba(139,92,246,.22),rgba(236,72,153,.1));
+  box-shadow:0 0 0 1px rgba(139,92,246,.4),0 18px 40px -22px rgba(139,92,246,.95);
+  transform:translateY(-2px);
+}
+.opt input:focus-visible + .opt__body{outline:2px solid var(--cyan);outline-offset:3px}
+
+.single-service{
+  display:flex;align-items:center;gap:13px;
+  padding:15px 18px;border-radius:var(--radius-sm);margin:0 0 22px;
+  border:1px solid rgba(139,92,246,.45);
+  background:linear-gradient(150deg,rgba(139,92,246,.2),rgba(236,72,153,.08));
+  box-shadow:0 0 0 1px rgba(139,92,246,.18);
+}
+.single-service .ss-icon{
+  width:40px;height:40px;flex:0 0 auto;border-radius:11px;display:grid;place-items:center;
+  font-size:1.1rem;background:rgba(255,255,255,.08);border:1px solid var(--stroke);
+}
+.single-service strong{display:block;font-size:.95rem;letter-spacing:-.01em}
+.single-service small{display:block;font-size:.77rem;color:var(--muted);font-weight:400}
+
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.field label{font-size:.79rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.field .req{color:var(--pink)}
+.input,select.input,textarea.input{
+  width:100%;padding:13px 16px;border-radius:12px;
+  background:rgba(255,255,255,.045);
+  border:1px solid var(--stroke);
+  color:var(--text);font-size:.94rem;
+  transition:border-color .25s,background .25s,box-shadow .25s;
+  appearance:none;-webkit-appearance:none;
+}
+.input::placeholder{color:#6d7893}
+.input:focus{
+  outline:none;border-color:rgba(139,92,246,.8);
+  background:rgba(139,92,246,.09);
+  box-shadow:0 0 0 3px rgba(139,92,246,.18);
+}
+select.input{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%23a3adc2' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;
+  padding-right:42px;cursor:pointer;
+}
+select.input option{background:#0b0e1c;color:var(--text)}
+textarea.input{resize:vertical;min-height:110px;line-height:1.55}
+input[type="date"].input,input[type="time"].input{color-scheme:dark}
+.phone-group{display:grid;grid-template-columns:118px minmax(0,1fr);gap:10px}
+.has-error .input{border-color:rgba(251,113,133,.85);background:rgba(251,113,133,.08)}
+.err{font-size:.76rem;color:var(--red);min-height:0;display:none}
+.has-error .err{display:block}
+
+.consent{display:flex;gap:11px;align-items:flex-start;margin:6px 0 22px;font-size:.84rem;color:var(--muted);cursor:pointer;line-height:1.6}
+.consent input{flex:0 0 auto;width:18px;height:18px;margin-top:3px;accent-color:var(--violet);cursor:pointer}
+.consent strong{color:#dbe2f1;font-weight:600}
+
+.form__note{
+  font-size:.79rem;color:var(--muted);margin:16px 0 0;line-height:1.65;
+  padding:13px 15px;border-radius:12px;background:rgba(34,211,238,.06);
+  border:1px solid rgba(34,211,238,.18);
+}
+.form__note strong{color:var(--cyan)}
+.alert{
+  display:none;padding:15px 18px;border-radius:14px;font-size:.89rem;margin-bottom:20px;line-height:1.6;
+  border:1px solid rgba(52,211,153,.35);background:rgba(52,211,153,.1);color:#b8f5dd;
+  animation:pop .45s var(--ease);
+}
+.alert.show{display:block}
+.alert--err{border-color:rgba(251,113,133,.4);background:rgba(251,113,133,.1);color:#ffcdd3}
+.alert b{display:block;margin-bottom:4px;font-size:.95rem}
+@keyframes pop{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+/* Apply aside */
+.aside-card{padding:28px}
+.aside-card h4{margin:0 0 14px;font-size:1.05rem;letter-spacing:-.01em}
+.aside-list{list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:14px}
+.aside-list li{display:flex;gap:12px;font-size:.87rem;color:var(--muted);line-height:1.6}
+.aside-list li::before{content:"◆";flex:0 0 auto;color:var(--violet);font-size:.72rem;line-height:1.9}
+.aside-list strong{color:var(--text);font-weight:600}
+.privacy-badge{
+  display:flex;align-items:center;gap:11px;font-size:.8rem;color:#b8f5dd;line-height:1.55;
+  padding:13px 15px;border-radius:12px;background:rgba(52,211,153,.09);
+  border:1px solid rgba(52,211,153,.28);
+}
+
+/* =====================================================================
+   10. REVIEWS
+   ===================================================================== */
+.reviews__head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:36px}
+.rating-summary{
+  display:flex;align-items:center;gap:14px;padding:13px 22px;border-radius:999px;
+  border:1px solid var(--stroke);background:rgba(255,255,255,.045);
+}
+.rating-summary b{font-size:1.6rem;font-weight:800;letter-spacing:-.03em;line-height:1}
+.rating-summary .stars-static{color:var(--gold);font-size:1rem;letter-spacing:2px}
+.rating-summary small{color:var(--muted);font-size:.78rem;display:block}
+.reviews__grid{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:26px;align-items:start}
+.review-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.review{
+  padding:22px;border-radius:var(--radius-sm);
+  border:1px solid var(--stroke);background:rgba(255,255,255,.04);
+  transition:transform .35s var(--ease),border-color .35s,background .35s;
+  animation:pop .5s var(--ease);
+}
+.review:hover{transform:translateY(-4px);border-color:rgba(34,211,238,.4);background:rgba(34,211,238,.06)}
+.review__head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.review__avatar{
+  width:40px;height:40px;flex:0 0 auto;border-radius:50%;display:grid;place-items:center;
+  font-weight:800;font-size:.95rem;color:#fff;
+  background:linear-gradient(135deg,rgba(139,92,246,.9),rgba(236,72,153,.9));
+  box-shadow:0 0 0 1px rgba(255,255,255,.14) inset;
+}
+.review__head strong{display:block;font-size:.9rem;letter-spacing:.01em}
+.review__head small{color:var(--muted);font-size:.75rem}
+.review__stars{color:var(--gold);letter-spacing:2px;font-size:.92rem;margin-bottom:9px}
+.review__text{margin:0;font-size:.87rem;color:#c8d0e2;line-height:1.65}
+.empty{color:var(--muted);font-size:.9rem;grid-column:1/-1;padding:26px;text-align:center;border:1px dashed rgba(255,255,255,.14);border-radius:var(--radius-sm)}
+
+.stars-input{display:flex;gap:6px;margin-bottom:6px}
+.stars-input button{
+  background:none;border:0;cursor:pointer;padding:2px;font-size:1.85rem;line-height:1;
+  color:rgba(255,255,255,.2);transition:transform .18s var(--ease),color .18s,text-shadow .18s;
+}
+.stars-input button:hover{transform:scale(1.16)}
+.stars-input button.on{color:var(--gold);text-shadow:0 0 16px rgba(247,201,72,.75)}
+
+/* =====================================================================
+   11. ETHICS
+   ===================================================================== */
+.ethics__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.ethics-card{padding:26px;transition:transform .35s var(--ease),border-color .35s}
+.ethics-card:hover{transform:translateY(-4px);border-color:rgba(34,211,238,.38)}
+.ethics-card h4{margin:0 0 10px;font-size:1rem;display:flex;align-items:center;gap:10px;letter-spacing:-.01em;line-height:1.35}
+.ethics-card h4 span{font-size:1.15rem;flex:0 0 auto}
+.ethics-card p{margin:0;font-size:.86rem;color:var(--muted);line-height:1.7}
+.ethics-card strong{color:#dbe2f1;font-weight:600}
+.disclaimer{
+  margin-top:24px;padding:22px 26px;border-radius:var(--radius-sm);
+  border:1px solid rgba(247,201,72,.28);background:rgba(247,201,72,.06);
+  font-size:.83rem;color:#e4dcc2;line-height:1.75;
+}
+.disclaimer strong{color:var(--gold)}
+
+/* =====================================================================
+   12. FOOTER
+   ===================================================================== */
+.footer{
+  margin-top:40px;padding:56px 0 34px;border-top:1px solid var(--stroke);
+  background:linear-gradient(180deg,transparent,rgba(139,92,246,.06));
+}
+.footer__grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,.8fr));gap:40px;margin-bottom:38px}
+.footer h5{margin:0 0 15px;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.footer ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.footer ul a{font-size:.88rem;color:#c3cade;transition:color .25s,padding-left .25s}
+.footer ul a:hover{color:#fff;padding-left:5px}
+.footer__brand p{color:var(--muted);font-size:.87rem;margin:14px 0 0;max-width:42ch}
+.footer__bottom{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;
+  padding-top:24px;border-top:1px solid rgba(255,255,255,.07);
+  font-size:.79rem;color:#7f8aa3;
+}
+.demo-note{
+  display:none;margin-top:14px;padding:11px 15px;border-radius:12px;font-size:.78rem;
+  border:1px dashed rgba(247,201,72,.4);background:rgba(247,201,72,.07);color:#e8dcb4;line-height:1.6;
+}
+.demo-note.show{display:block}
+.demo-note code{color:var(--gold)}
+
+/* =====================================================================
+   13. MODAL
+   ===================================================================== */
+.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal__backdrop{
+  position:absolute;inset:0;background:rgba(3,4,10,.74);
+  -webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);
+  animation:fadeIn .3s var(--ease);
+}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.modal__card{
+  position:relative;width:100%;max-width:470px;padding:30px;
+  max-height:92vh;overflow-y:auto;animation:pop .38s var(--ease);
+}
+.modal__x{
+  position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:11px;
+  border:1px solid var(--stroke);background:rgba(255,255,255,.06);cursor:pointer;
+  font-size:.95rem;line-height:1;display:grid;place-items:center;
+  transition:background .25s,transform .25s;
+}
+.modal__x:hover{background:rgba(255,255,255,.14);transform:rotate(90deg)}
+.modal__card h3{margin:0 30px 6px 0;font-size:1.25rem;letter-spacing:-.02em;line-height:1.3}
+.modal__service{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--gold);
+  padding:6px 13px;border-radius:999px;margin:4px 0 18px;
+  background:rgba(247,201,72,.1);border:1px solid rgba(247,201,72,.3);
+}
+.modal__note{
+  font-size:.78rem;color:var(--muted);margin:16px 0 0;line-height:1.65;
+  padding:13px 15px;border-radius:12px;background:rgba(34,211,238,.06);
+  border:1px solid rgba(34,211,238,.18);
+}
+.modal__note strong{color:var(--cyan)}
+body.modal-open{overflow:hidden}
+
+/* =====================================================================
+   14. TOASTS
+   ===================================================================== */
+.toasts{position:fixed;right:20px;bottom:20px;z-index:400;display:flex;flex-direction:column;gap:10px;max-width:min(360px,calc(100vw - 40px))}
+.toast{
+  padding:14px 18px;border-radius:14px;font-size:.86rem;line-height:1.5;
+  border:1px solid var(--stroke-2);background:rgba(16,18,32,.95);
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+  box-shadow:0 20px 44px -20px rgba(0,0,0,.95);
+  animation:slideIn .4s var(--ease);
+}
+.toast--success{border-color:rgba(52,211,153,.5);color:#b8f5dd}
+.toast--error{border-color:rgba(251,113,133,.5);color:#ffcdd3}
+.toast--info{border-color:rgba(34,211,238,.45);color:#bdeaf5}
+.toast.out{animation:slideOut .35s var(--ease) forwards}
+@keyframes slideIn{from{opacity:0;transform:translateY(16px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes slideOut{to{opacity:0;transform:translateY(12px) scale(.96)}}
+
+/* =====================================================================
+   15. REVEAL
+   ===================================================================== */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* =====================================================================
+   16. RESPONSIVE
+   ===================================================================== */
+@media (max-width:1024px){
+  .hero__grid{grid-template-columns:1fr;gap:38px}
+  .hero{padding-top:132px}
+  .apply__grid{grid-template-columns:1fr}
+  .reviews__grid{grid-template-columns:1fr}
+  .footer__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  .nav__links{
+    position:fixed;inset:76px 16px auto 16px;
+    flex-direction:column;align-items:stretch;gap:4px;
+    padding:16px;border-radius:var(--radius);
+    background:rgba(10,12,24,.97);
+    -webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
+    border:1px solid var(--stroke);box-shadow:var(--shadow);
+    opacity:0;visibility:hidden;transform:translateY(-12px);
+    transition:opacity .3s var(--ease),transform .3s var(--ease),visibility .3s;
+    max-height:calc(100vh - 96px);overflow-y:auto;
+  }
+  .nav__links.open{opacity:1;visibility:visible;transform:none}
+  .nav__links a:not(.btn){padding:13px 16px;font-size:.95rem}
+  .nav__links .btn{margin-top:8px}
+  .nav__links .lang-switch{align-self:flex-start;margin-top:8px}
+  .nav__toggle{display:grid}
+  .brand__text small{display:none}
+}
+@media (max-width:720px){
+  .section{padding:68px 0}
+  .slots,.slots--single{grid-template-columns:1fr}
+  .campaign{padding:30px 22px}
+  .form{padding:24px 20px}
+  .form__row--2,.form__row--toggle{grid-template-columns:1fr}
+  .hero__stats{gap:10px}
+  .stat{flex:1 1 calc(50% - 10px)}
+  .footer__grid{grid-template-columns:1fr;gap:30px}
+  .phone-group{grid-template-columns:104px minmax(0,1fr)}
+  .toasts{right:12px;left:12px;bottom:12px;max-width:none}
+  .modal__card{padding:24px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+.alert--ok{border-color:rgba(52,211,153,.4);background:rgba(52,211,153,.1);color:#b8f5dd}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+</style>
+</head>
+<body>
+
+<!-- ================= BACKGROUND ================= -->
+<div class="bg" aria-hidden="true">
+  <span class="orb orb--1"></span>
+  <span class="orb orb--2"></span>
+  <span class="orb orb--3"></span>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a class="brand" href="#home" aria-label="Dr. Payal Pratik Kikani — Home">
+      <span class="brand__mark">PPK</span>
+      <span class="brand__text">
+        <strong>Dr. Payal Pratik Kikani</strong>
+        <small data-i18n="brand.role">PhD Astrology · Pranic Healer · Wealth Advisor</small>
+      </span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#campaign" data-i18n="nav.campaign">Free Campaign</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#apply" data-i18n="nav.apply">Apply</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="#ethics" data-i18n="nav.ethics">Ethics</a>
+      <a class="btn btn--primary btn--sm" href="#apply" data-i18n="nav.cta">Book Free Slot</a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="container hero__grid">
+      <div class="hero__left reveal">
+        <span class="pill" data-i18n="hero.pill">📍 Ahmedabad, Gujarat, India</span>
+        <h1>Dr. Payal Pratik <span class="grad">Kikani</span></h1>
+        <p class="hero__sub" data-i18n-html="hero.sub">
+          Vedic &amp; Prashna Astrology · Pranic Healing · Wealth, Tax &amp; Investment Advisory.
+          A modern, ethical and completely transparent practice — <strong>100% free campaign slots,
+          zero ads</strong>, and absolute confidentiality.
+        </p>
+
+        <div class="chips">
+          <span class="chip" data-i18n="hero.chip1">PhD in Astrology</span>
+          <span class="chip" data-i18n="hero.chip2">Pranic Healer</span>
+          <span class="chip" data-i18n="hero.chip3">B.Com · M.Com</span>
+          <span class="chip" data-i18n="hero.chip4">CA Inter</span>
+          <span class="chip" data-i18n="hero.chip5">Wealth &amp; Tax Advisor</span>
+        </div>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#apply" data-i18n="hero.cta1">🌸 Get Free Prashna Guidance</a>
+          <a class="btn btn--ghost" href="#services" data-i18n="hero.cta2">Explore Services</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat"><b class="grad" id="freeSlotTotal">4</b><span data-i18n="hero.stat1">Free slots / week</span></div>
+          <div class="stat"><b class="grad">100%</b><span data-i18n="hero.stat2">Free &amp; ad-free</span></div>
+          <div class="stat"><b class="grad">0</b><span data-i18n="hero.stat3">Hidden charges</span></div>
+          <div class="stat"><b class="grad">🔒</b><span data-i18n="hero.stat4">Data privacy</span></div>
+        </div>
+      </div>
+
+      <aside class="hero__card glass reveal" aria-label="Campaign at a glance">
+        <h3 data-i18n="card.title">Free Guidance Campaign</h3>
+        <p class="gu">🌸 નિઃશુલ્ક જ્યોતિષ માર્ગદર્શન અભિયાન 🌸</p>
+
+        <div class="minirow">
+          <span data-i18n="card.schedule">Schedule</span>
+          <b data-i18n="card.scheduleVal">Mon &amp; Thu</b>
+        </div>
+        <div class="minirow" data-slot-card="prashna_kundli">
+          <span data-i18n="card.prashna">Prashna Kundli</span>
+          <b><span data-slot-left="prashna_kundli">4</span> <span data-i18n="card.slotsLeft">slots left</span></b>
+        </div>
+        <div class="minirow" data-slot-card="birth_report">
+          <span data-i18n="card.birth">Birth Report</span>
+          <b><span data-slot-left="birth_report">1</span> <span data-i18n="card.slotsLeft">slots left</span></b>
+        </div>
+        <div class="minirow">
+          <span data-i18n="card.fee">Campaign fee</span>
+          <b class="badge-free" data-i18n="card.free">Free</b>
+        </div>
+        <div class="minirow">
+          <span data-i18n="card.reply">Reply via</span>
+          <b data-i18n="card.whatsapp">WhatsApp</b>
+        </div>
+
+        <a class="btn btn--primary btn--block" href="#apply" style="margin-top:20px" data-i18n="card.cta">Try Prashna Kundli — Free</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ================= CAMPAIGN ================= -->
+  <section class="section" id="campaign">
+    <div class="container">
+      <div class="campaign glass reveal">
+        <div class="campaign__glow" aria-hidden="true"></div>
+
+        <p class="campaign__gu">🌸 નિઃશુલ્ક જ્યોતિષ માર્ગદર્શન અભિયાન 🌸</p>
+        <h2 class="campaign__en" data-i18n="campaign.title">Free Guidance Campaign</h2>
+        <p class="campaign__sched">🗓️ દર સોમવારે અને ગુરુવારે · <span data-i18n="campaign.sched">Every Monday &amp; Thursday</span></p>
+
+        <div class="slots" id="campaignSlots">
+          <div class="slotcard" data-slot-card="prashna_kundli">
+            <div class="slotcard__head">
+              <span class="slotcard__icon" aria-hidden="true">🔮</span>
+              <div>
+                <strong data-i18n="slot.prashna.t">Prashna Kundli Reply</strong>
+                <small data-i18n="slot.prashna.s">Direct answer to your specific question</small>
+              </div>
+            </div>
+            <div class="slotcard__count">
+              <b data-slot-left="prashna_kundli">4</b>
+              <span data-slot-of="prashna_kundli">/ 4 slots available</span>
+            </div>
+            <div class="bar"><i data-slot-bar="prashna_kundli"></i></div>
+          </div>
+
+          <div class="slotcard" data-slot-card="birth_report">
+            <div class="slotcard__head">
+              <span class="slotcard__icon" aria-hidden="true">📜</span>
+              <div>
+                <strong data-i18n="slot.birth.t">Detailed Birth Report</strong>
+                <small data-i18n="slot.birth.s">Gujarati / English — PDF</small>
+              </div>
+            </div>
+            <div class="slotcard__count">
+              <b data-slot-left="birth_report">1</b>
+              <span data-slot-of="birth_report">/ 1 slots available</span>
+            </div>
+            <div class="bar"><i data-slot-bar="birth_report"></i></div>
+          </div>
+        </div>
+
+        <ul class="rules">
+          <li data-i18n="campaign.rule1">1 Mobile Number = 1 Application</li>
+          <li data-i18n="campaign.rule2">Strict Data Privacy &amp; Confidentiality</li>
+          <li data-i18n="campaign.rule3">100% Free — No Ads, No Charges</li>
+          <li data-i18n="campaign.rule4">Reply on WhatsApp Only</li>
+        </ul>
+
+        <a class="btn btn--primary" href="#apply" data-i18n="campaign.cta">Apply for a Free Slot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="svc.eyebrow">Services &amp; Pricing</span>
+        <h2 class="section__title" data-i18n-html="svc.title">Clear guidance. <span class="grad">Honest pricing.</span></h2>
+        <p class="section__lead" data-i18n="svc.lead">
+          Every consultation is handled personally, with complete confidentiality. The free campaign runs
+          in parallel with paid consultations — you always know exactly what you are paying for, before you pay.
+        </p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Astrology -->
+        <article class="service glass reveal">
+          <div class="service__icon" aria-hidden="true">🪐</div>
+          <h3 data-i18n="svc.astro.t">Vedic &amp; Prashna Astrology</h3>
+          <p class="service__desc" data-i18n="svc.astro.d">In-depth chart study, timing of events and practical, simple remedies.</p>
+          <ul class="price-list">
+            <li><span data-i18n="svc.astro.p1">Kundli Analysis with Particular Aspects</span><span class="amt">₹1000</span></li>
+            <li><span data-i18n="svc.astro.p2">Prashna Kundli — 1st Query</span><span class="amt">₹400</span></li>
+            <li><span data-i18n="svc.astro.p3">2nd Query onwards / Follow-up</span><span class="amt">₹300</span></li>
+          </ul>
+          <button class="btn btn--ghost btn--block" type="button"
+                  data-connect="svc.astro.t" data-i18n="svc.connect">
+            Connect / Learn More
+          </button>
+          <p class="service__note" data-i18n="svc.astro.note">
+            <strong>Free campaign:</strong> limited free Prashna Kundli slots every Monday &amp; Thursday.
+          </p>
+        </article>
+
+        <!-- Pranic Healing -->
+        <article class="service glass reveal">
+          <div class="service__icon" aria-hidden="true">✨</div>
+          <h3 data-i18n="svc.heal.t">Pranic Healing</h3>
+          <p class="service__desc" data-i18n="svc.heal.d">Physical, mental and emotional energy balancing — gentle, non-invasive and supportive.</p>
+          <ul class="price-list">
+            <li><span data-i18n="svc.heal.p1">Pranic Healing Session</span><span class="amt">₹400</span></li>
+            <li><span data-i18n="svc.heal.p2">Mode</span><span class="amt" data-i18n="svc.heal.p2v">In-Person &amp; Distance</span></li>
+          </ul>
+          <button class="btn btn--ghost btn--block" type="button"
+                  data-connect="svc.heal.t" data-i18n="svc.connect">
+            Connect / Learn More
+          </button>
+          <p class="service__note" data-i18n-html="svc.heal.note">
+            <strong>Healing possible via In-Person as well as Distance</strong> — distance sessions are equally effective.
+          </p>
+        </article>
+
+        <!-- Wealth / Tax -->
+        <article class="service glass reveal">
+          <div class="service__icon" aria-hidden="true">📈</div>
+          <h3 data-i18n="svc.wealth.t">Wealth Compass &amp; Tax Desk</h3>
+          <p class="service__desc" data-i18n="svc.wealth.d">
+            Investments, income tax, GST and books of accounts — handled with clarity and zero product pushing.
+          </p>
+          <ul class="price-list">
+            <li><span data-i18n="svc.wealth.p1">Investment Advisory &amp; Financial Planning</span><span class="amt" data-i18n="svc.wealth.amt">On Consultation</span></li>
+            <li><span data-i18n="svc.wealth.p2">Income Tax Return (ITR) Filing</span><span class="amt" data-i18n="svc.wealth.amt">On Consultation</span></li>
+            <li><span data-i18n="svc.wealth.p3">GST Return Filing</span><span class="amt" data-i18n="svc.wealth.amt">On Consultation</span></li>
+            <li><span data-i18n="svc.wealth.p4">Books of Account Services</span><span class="amt" data-i18n="svc.wealth.amt">On Consultation</span></li>
+          </ul>
+          <button class="btn btn--ghost btn--block" type="button"
+                  data-connect="svc.wealth.t" data-i18n="svc.connect">
+            Connect / Learn More
+          </button>
+          <p class="service__note" data-i18n="svc.wealth.note">
+            We prefer a personal one-to-one meeting to understand your situation and help you choose the best
+            suitable option. We never force you to pick only from our bucket.
+          </p>
+        </article>
+
+      </div>
+
+      <p class="pricing-note reveal" data-i18n-html="svc.pricingNote">
+        <strong>Please note:</strong> Prices stated above are starting and basic fees. For any variation in
+        fees, we will first inform you about the charges (if any) — nothing is charged without your confirmation.
+      </p>
+
+      <p class="services__foot reveal" data-i18n-html="svc.foot">
+        To know more, get connected with us. We will call you back on our free slots on working days —
+        <b>we will contact you on WhatsApp, either via call or via message.</b>
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= APPLY ================= -->
+  <section class="section" id="apply">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="apply.eyebrow">Free Campaign Application</span>
+        <h2 class="section__title" data-i18n-html="apply.title">Want to try our <span class="grad">Prashna Kundli</span> service?</h2>
+        <p class="section__lead" data-i18n="apply.lead">
+          Ask one clear question, fill in your details, and submit. Your answer will be shared on the WhatsApp
+          number you provide — on our next free slot (Monday or Thursday).
+        </p>
+      </div>
+
+      <div class="apply__grid">
+
+        <!-- FORM -->
+        <div class="form glass reveal">
+          <h3 data-i18n="apply.formTitle">Free Prashna Kundli Application</h3>
+          <p class="form__hint" data-i18n="apply.hint">
+            Fields marked * are required. One mobile number = one application.
+          </p>
+
+          <div class="alert" id="applyAlert" role="status" aria-live="polite"></div>
+
+          <form id="applyForm" novalidate autocomplete="on">
+            <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <!-- Single-service badge (shown when only one free service is enabled) -->
+            <div class="single-service" id="singleServiceNote" hidden>
+              <span class="ss-icon" aria-hidden="true">🔮</span>
+              <div>
+                <strong data-i18n="apply.single.t">Prashna Kundli Reply — Free</strong>
+                <small data-i18n="apply.single.s">This is the only free service running in the current campaign.</small>
+              </div>
+            </div>
+
+            <div class="form__row form__row--toggle" id="serviceToggle" role="radiogroup" aria-label="Select free service">
+              <label class="opt" data-service-option="prashna_kundli">
+                <input type="radio" name="service" value="prashna_kundli" checked />
+                <span class="opt__body">
+                  <strong data-i18n="apply.optPrashna.t">Prashna Kundli Reply</strong>
+                  <small data-i18n="apply.optPrashna.s">Answer to your question</small>
+                </span>
+              </label>
+              <label class="opt" data-service-option="birth_report">
+                <input type="radio" name="service" value="birth_report" />
+                <span class="opt__body">
+                  <strong data-i18n="apply.optBirth.t">Detailed Birth Report</strong>
+                  <small data-i18n="apply.optBirth.s">Gujarati / English — PDF</small>
+                </span>
+              </label>
+            </div>
+
+            <!-- Common -->
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label for="fullName"><span data-i18n="form.name">Full Name</span> <span class="req">*</span></label>
+                <input class="input" id="fullName" name="fullName" type="text"
+                       data-i18n-ph="form.namePh" placeholder="Your full name" autocomplete="name" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="phone"><span data-i18n="form.phone">WhatsApp Number</span> <span class="req">*</span></label>
+                <div class="phone-group">
+                  <select class="input" id="countryCode" name="countryCode" aria-label="Country code">
+                    <option value="+91" selected>🇮🇳 +91</option>
+                    <option value="+1">🇺🇸 +1</option>
+                    <option value="+44">🇬🇧 +44</option>
+                    <option value="+971">🇦🇪 +971</option>
+                    <option value="+61">🇦🇺 +61</option>
+                    <option value="+65">🇸🇬 +65</option>
+                    <option value="+64">🇳🇿 +64</option>
+                    <option value="+27">🇿🇦 +27</option>
+                    <option value="+974">🇶🇦 +974</option>
+                    <option value="+965">🇰🇼 +965</option>
+                    <option value="+966">🇸🇦 +966</option>
+                    <option value="+60">🇲🇾 +60</option>
+                    <option value="+49">🇩🇪 +49</option>
+                    <option value="+33">🇫🇷 +33</option>
+                    <option value="+39">🇮🇹 +39</option>
+                    <option value="+81">🇯🇵 +81</option>
+                    <option value="+86">🇨🇳 +86</option>
+                    <option value="+92">🇵🇰 +92</option>
+                    <option value="+880">🇧🇩 +880</option>
+                    <option value="+977">🇳🇵 +977</option>
+                    <option value="+94">🇱🇰 +94</option>
+                  </select>
+                  <input class="input" id="phone" name="phone" type="tel" inputmode="numeric"
+                         data-i18n-ph="form.phonePh" placeholder="98765 43210" autocomplete="tel" />
+                </div>
+                <span class="err"></span>
+              </div>
+            </div>
+
+            <!-- Birth report fields (hidden unless campaign re-enabled) -->
+            <div id="groupBirth" hidden>
+              <div class="form__row form__row--2">
+                <div class="field">
+                  <label for="dob"><span data-i18n="form.dob">Date of Birth</span> <span class="req">*</span></label>
+                  <input class="input" id="dob" name="dob" type="date" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="tob"><span data-i18n="form.tob">Time of Birth</span> <span class="req">*</span></label>
+                  <input class="input" id="tob" name="tob" type="time" />
+                  <span class="err"></span>
+                </div>
+              </div>
+              <div class="form__row form__row--2">
+                <div class="field">
+                  <label for="placeOfBirth"><span data-i18n="form.place">Place of Birth</span> <span class="req">*</span></label>
+                  <input class="input" id="placeOfBirth" name="placeOfBirth" type="text"
+                         data-i18n-ph="form.placePh" placeholder="City, State, Country" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="language"><span data-i18n="form.lang">Report Language</span> <span class="req">*</span></label>
+                  <select class="input" id="language" name="language">
+                    <option value="Gujarati">ગુજરાતી (Gujarati)</option>
+                    <option value="English">English</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prashna fields -->
+            <div id="groupPrashna">
+              <div class="form__row">
+                <div class="field">
+                  <label for="question"><span data-i18n="form.question">Your Question</span> <span class="req">*</span></label>
+                  <textarea class="input" id="question" name="question" rows="4"
+                            data-i18n-ph="form.questionPh"
+                            placeholder="Please write your question clearly and specifically (one focused question works best)."></textarea>
+                  <span class="err"></span>
+                </div>
+              </div>
+              <div class="form__row form__row--2">
+                <div class="field">
+                  <label for="city"><span data-i18n="form.city">Present Living City</span> <span class="req">*</span></label>
+                  <input class="input" id="city" name="city" type="text"
+                         data-i18n-ph="form.cityPh" placeholder="Ahmedabad" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="state"><span data-i18n="form.state">State</span> <span class="req">*</span></label>
+                  <input class="input" id="state" name="state" type="text"
+                         data-i18n-ph="form.statePh" placeholder="Gujarat" />
+                  <span class="err"></span>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="country"><span data-i18n="form.country">Country</span> <span class="req">*</span></label>
+                  <input class="input" id="country" name="country" type="text"
+                         data-i18n-ph="form.countryPh" placeholder="India" />
+                  <span class="err"></span>
+                </div>
+              </div>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" id="consent" name="consent" />
+              <span data-i18n-html="form.consent">
+                I confirm the details above are correct and I agree that my reply will be communicated to me
+                <strong>via the WhatsApp number provided</strong>. I understand my data is used only for this
+                consultation and kept strictly confidential.
+              </span>
+            </label>
+
+            <button class="btn btn--primary btn--block" type="submit" id="applySubmit"
+                    data-i18n="form.submit">Submit Application</button>
+
+            <p class="form__note" data-i18n-html="apply.note">
+              <strong>Reply via WhatsApp only.</strong> Your answer is shared on the WhatsApp number you provide —
+              we will contact you <strong>either via call or via message</strong> — on our free slots on working
+              days (Mon &amp; Thu). Please save the number once you receive a message.
+            </p>
+            <p class="demo-note" id="demoNote" data-i18n-html="apply.demo">
+              ⚙️ <strong>Demo mode:</strong> submissions are saved in this browser only.
+              Paste your Google Apps Script Web App URL into <code>CONFIG.SCRIPT_URL</code> to go live.
+            </p>
+          </form>
+        </div>
+
+        <!-- ASIDE -->
+        <aside class="aside-card glass reveal">
+          <h4 data-i18n="aside.title">Before you apply</h4>
+          <ul class="aside-list">
+            <li data-i18n-html="aside.l1"><span><strong>One mobile number = one application.</strong> Duplicate entries are rejected automatically.</span></li>
+            <li data-i18n-html="aside.l2"><span><strong>Prashna Kundli</strong> works best with one clear, focused question per application.</span></li>
+            <li data-i18n-html="aside.l3"><span><strong>Slots are limited</strong> — only 4 Prashna Kundli replies are released every campaign week.</span></li>
+            <li data-i18n-html="aside.l4"><span><strong>No wrong promises.</strong> Guidance is honest, practical and never fear-based.</span></li>
+            <li data-i18n-html="aside.l5"><span><strong>We reply on WhatsApp</strong> — either via call or via message, on working days.</span></li>
+          </ul>
+          <div class="privacy-badge">
+            🔒 <span data-i18n="aside.privacy">Your details are never shared, sold or used for marketing. Ever.</span>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="reviews__head reveal">
+        <div>
+          <span class="eyebrow" data-i18n="rev.eyebrow">Client Reviews</span>
+          <h2 class="section__title" style="margin-bottom:0" data-i18n-html="rev.title">What clients <span class="grad">share</span></h2>
+        </div>
+        <div class="rating-summary">
+          <b id="avgRating">—</b>
+          <div>
+            <div class="stars-static" aria-hidden="true">★★★★★</div>
+            <small><span data-i18n="rev.based">based on</span> <span id="reviewCount">0</span> <span data-i18n="rev.reviewsWord">reviews</span></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews__grid">
+
+        <!-- Review form -->
+        <div class="form glass reveal">
+          <h3 data-i18n="rev.formTitle">Share your experience</h3>
+          <p class="form__hint" data-i18n-html="rev.hint">
+            Your name is masked on the website for privacy (e.g. <em>P****l K.</em>) — your city stays visible.
+          </p>
+
+          <div class="alert" id="reviewAlert" role="status" aria-live="polite"></div>
+
+          <form id="reviewForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label><span data-i18n="rev.rating">Your Rating</span> <span class="req">*</span></label>
+                <div class="stars-input" id="starInput" role="radiogroup" aria-label="Rating out of 5">
+                  <button type="button" data-value="1" aria-label="1 star">★</button>
+                  <button type="button" data-value="2" aria-label="2 stars">★</button>
+                  <button type="button" data-value="3" aria-label="3 stars">★</button>
+                  <button type="button" data-value="4" aria-label="4 stars">★</button>
+                  <button type="button" data-value="5" aria-label="5 stars">★</button>
+                </div>
+                <input type="hidden" id="ratingValue" name="rating" value="0" />
+                <span class="err"></span>
+              </div>
+            </div>
+
+            <div class="form__row form__row--2">
+              <div class="field">
+                <label for="reviewName"><span data-i18n="rev.name">Name</span> <span class="req">*</span></label>
+                <input class="input" id="reviewName" name="reviewName" type="text"
+                       data-i18n-ph="rev.namePh" placeholder="Your name" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="reviewCity"><span data-i18n="rev.city">City</span> <span class="req">*</span></label>
+                <input class="input" id="reviewCity" name="reviewCity" type="text"
+                       data-i18n-ph="rev.cityPh" placeholder="Ahmedabad" />
+                <span class="err"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="reviewMessage"><span data-i18n="rev.msg">Your Feedback</span> <span class="req">*</span></label>
+                <textarea class="input" id="reviewMessage" name="reviewMessage" rows="4"
+                          data-i18n-ph="rev.msgPh"
+                          placeholder="Tell others about your consultation experience…"></textarea>
+                <span class="err"></span>
+              </div>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit" id="reviewSubmit"
+                    data-i18n="rev.submit">Post Review</button>
+
+            <p class="form__note" data-i18n-html="rev.note">
+              Reviews are published with your <strong>name masked</strong> and city visible.
+              We never publish phone numbers.
+            </p>
+          </form>
+        </div>
+
+        <!-- Review list -->
+        <div class="review-list" id="reviewList" aria-live="polite">
+          <p class="empty" data-i18n="rev.loading">Loading reviews…</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ETHICS ================= -->
+  <section class="section" id="ethics">
+    <div class="container">
+      <div class="reveal">
+        <span class="eyebrow" data-i18n="eth.eyebrow">Professional Ethics &amp; Disclaimer</span>
+        <h2 class="section__title" data-i18n-html="eth.title">Guidance with <span class="grad">integrity</span></h2>
+        <p class="section__lead" data-i18n="eth.lead">
+          Let us clarify further.
+        </p>
+      </div>
+
+      <div class="ethics__grid">
+        <article class="ethics-card glass reveal">
+          <h4><span aria-hidden="true">🕉️</span> <span data-i18n="eth.c1t">Respect for All Traditions</span></h4>
+          <p data-i18n="eth.c1p">
+            This practice respects every faith, tradition and fellow astrologer. Nothing here is intended to
+            discredit any school of astrology, healer or advisor. Guidance is offered as a supportive perspective
+            — never as a claim of absolute certainty or superiority.
+          </p>
+        </article>
+
+        <article class="ethics-card glass reveal">
+          <h4><span aria-hidden="true">💎</span> <span data-i18n="eth.c2t">Practical &amp; Simple Remedies Only</span></h4>
+          <p data-i18n="eth.c2p">
+            Practical and simple remedies are suggested only when necessary. You will never be pushed towards
+            expensive gemstones, costly rituals or repeated paid visits. If a simple change in routine,
+            discipline or perspective is enough, that is exactly what will be advised.
+          </p>
+        </article>
+
+        <article class="ethics-card glass reveal">
+          <h4><span aria-hidden="true">🔒</span> <span data-i18n="eth.c3t">Complete Confidentiality</span></h4>
+          <p data-i18n="eth.c3p">
+            Every detail shared — birth data, questions, health or financial information — is treated as strictly
+            confidential. Data is used only to prepare your report or reply, and is never sold, shared or used
+            for the purpose otherthan for which obtained.
+          </p>
+        </article>
+
+        <article class="ethics-card glass reveal">
+          <h4><span aria-hidden="true">💬</span> <span data-i18n="eth.c4t">Communication Channel</span></h4>
+          <p data-i18n="eth.c4p">
+            All replies and reports will be communicated via the WhatsApp number you provide — we will contact
+            you either via call or via message. Please ensure the number is correct and reachable. Applications
+            with incorrect numbers cannot be processed and the slot is released back to the campaign.
+          </p>
+        </article>
+
+        <article class="ethics-card glass reveal">
+          <h4><span aria-hidden="true">⚖️</span> <span data-i18n="eth.c5t">No Guarantees, No Fear</span></h4>
+          <p data-i18n="eth.c5p">
+            Astrology, healing and advisory are supportive disciplines — not substitutes for medical, legal,
+            psychological or regulated financial professionals. No specific outcome, profit or cure is guaranteed.
+            Guidance is never fear-based and never pressures you into a decision.
+          </p>
+        </article>
+
+        <article class="ethics-card glass reveal">
+          <h4><span aria-hidden="true">🤝</span> <span data-i18n="eth.c6t">Fair Slot Policy</span></h4>
+          <p data-i18n="eth.c6p">
+            One mobile number equals one application. Duplicate or misleading entries are removed automatically
+            so that slots stay available for genuine seekers. Free campaign slots are limited and allocated on a
+            first-come, first-served basis every Monday and Thursday.
+          </p>
+        </article>
+      </div>
+
+      <p class="disclaimer reveal" data-i18n-html="eth.disclaimer">
+        <strong>Disclaimer:</strong> The content of this website is for general guidance and informational purposes only.
+        Astrological insights, energy healing and investment / tax advisory are provided in good faith and are not a
+        substitute for professional medical, legal, psychological or regulated financial advice. Results may vary from
+        person to person. Dr. Payal Pratik Kikani shall not be liable for any decision taken solely on the basis of a
+        consultation. By submitting an application or review, you confirm that the information provided is accurate and
+        that you consent to being contacted on the WhatsApp number shared. All consultations are strictly confidential.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#home">
+          <span class="brand__mark">PPK</span>
+          <span class="brand__text">
+            <strong>Dr. Payal Pratik Kikani</strong>
+            <small data-i18n="brand.role">PhD Astrology · Pranic Healer · Wealth Advisor</small>
+          </span>
+        </a>
+        <p data-i18n="foot.about">
+          Ahmedabad, Gujarat, India · Vedic &amp; Prashna Astrology, Pranic Healing, Investment &amp; Tax Advisory.
+          Ethical, confidential and completely ad-free.
+        </p>
+      </div>
+
+      <div>
+        <h5 data-i18n="foot.explore">Explore</h5>
+        <ul>
+          <li><a href="#campaign" data-i18n="nav.campaign">Free Campaign</a></li>
+          <li><a href="#services" data-i18n="foot.svcLink">Services &amp; Pricing</a></li>
+          <li><a href="#apply" data-i18n="foot.applyLink">Apply for Free Slot</a></li>
+          <li><a href="#reviews" data-i18n="nav.reviews">Reviews</a></li>
+          <li><a href="#ethics" data-i18n="nav.ethics">Ethics</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5 data-i18n="foot.campaign">Campaign</h5>
+        <ul>
+          <li><a href="#apply" data-i18n="foot.c1">Prashna Kundli — 4 slots</a></li>
+          <li><a href="#campaign" data-i18n="foot.c2">Every Monday &amp; Thursday</a></li>
+          <li><a href="#ethics" data-i18n="foot.c3">Privacy &amp; Confidentiality</a></li>
+          <li><a href="#services" data-i18n="foot.c4">Paid Consultations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2025</span> Dr. Payal Pratik Kikani. <span data-i18n="foot.rights">All rights reserved.</span></span>
+      <span>🌸 નિઃશુલ્ક જ્યોતિષ માર્ગદર્શન અભિયાન · <span data-i18n="foot.tag">100% Free · Zero Ads</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= CONNECT MODAL ================= -->
+<div class="modal" id="connectModal" aria-hidden="true">
+  <div class="modal__backdrop" data-close="1"></div>
+  <div class="modal__card glass" role="dialog" aria-modal="true" aria-labelledby="connectTitle">
+    <button class="modal__x" type="button" data-close="1" aria-label="Close">✕</button>
+    <h3 id="connectTitle" data-i18n="connect.title">Connect with us</h3>
+    <p class="form__hint" data-i18n="connect.lead">
+      Leave your details and we will get back to you on WhatsApp. No obligation, no pressure.
+    </p>
+    <p class="modal__service" id="connectService">—</p>
+
+    <div class="alert" id="connectAlert" role="status" aria-live="polite"></div>
+
+    <form id="connectForm" novalidate>
+      <div class="form__row">
+        <div class="field">
+          <label for="leadName"><span data-i18n="form.name">Full Name</span> <span class="req">*</span></label>
+          <input class="input" id="leadName" name="leadName" type="text"
+                 data-i18n-ph="form.namePh" placeholder="Your full name" autocomplete="name" />
+          <span class="err"></span>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="leadPhone"><span data-i18n="form.phone">WhatsApp Number</span> <span class="req">*</span></label>
+          <div class="phone-group">
+            <select class="input" id="leadCountryCode" name="leadCountryCode" aria-label="Country code">
+              <option value="+91" selected>🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+61">🇦🇺 +61</option>
+              <option value="+65">🇸🇬 +65</option>
+              <option value="+64">🇳🇿 +64</option>
+              <option value="+27">🇿🇦 +27</option>
+              <option value="+974">🇶🇦 +974</option>
+              <option value="+965">🇰🇼 +965</option>
+              <option value="+966">🇸🇦 +966</option>
+              <option value="+60">🇲🇾 +60</option>
+              <option value="+49">🇩🇪 +49</option>
+              <option value="+33">🇫🇷 +33</option>
+              <option value="+39">🇮🇹 +39</option>
+              <option value="+81">🇯🇵 +81</option>
+              <option value="+86">🇨🇳 +86</option>
+              <option value="+92">🇵🇰 +92</option>
+              <option value="+880">🇧🇩 +880</option>
+              <option value="+977">🇳🇵 +977</option>
+              <option value="+94">🇱🇰 +94</option>
+            </select>
+            <input class="input" id="leadPhone" name="leadPhone" type="tel" inputmode="numeric"
+                   data-i18n-ph="form.phonePh" placeholder="98765 43210" autocomplete="tel" />
+          </div>
+          <span class="err"></span>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="field">
+          <label for="leadMessage">
+            <span data-i18n="connect.message">Brief Message</span>
+            <span style="text-transform:none;letter-spacing:0;color:#6d7893" data-i18n="connect.optional">(optional)</span>
+          </label>
+          <textarea class="input" id="leadMessage" name="leadMessage" rows="3"
+                    data-i18n-ph="connect.messagePh"
+                    placeholder="What would you like help with? (optional)"></textarea>
+          <span class="err"></span>
+        </div>
+      </div>
+
+      <button class="btn btn--primary btn--block" type="submit" id="connectSubmit"
+              data-i18n="connect.submit">Send Request</button>
+
+      <p class="modal__note" data-i18n-html="connect.note">
+        <strong>We will contact you on WhatsApp</strong> — either via call or via message — on our free slots
+        on working days. Your details stay strictly confidential.
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+<script>
+/* ===================== CONFIG ===================== */
+const CONFIG = {
+  // Your deployed Google Apps Script Web App URL (must end with /exec)
+  SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbw8OPPUvNVjqu5i4cBFpMzPA-GcNlUKkRZNEmsTOpPymY-Wyxzji8eOKQjLR-y5uYIx/exec',
+  CAMPAIGN: {
+    prashna_kundli: { enabled: true, slots: 4 },
+    birth_report:   { enabled: true, slots: 1 }
+  }
+};
+const IS_DEMO = !/^https:\/\/script\.google\.com\/macros\/s\/.+\/exec$/.test(CONFIG.SCRIPT_URL);
+const $  = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+/* ===================== HELPERS ===================== */
+function toast(msg, type = 'info') {
+  const t = document.createElement('div');
+  t.className = 'toast toast--' + type; t.textContent = msg;
+  $('#toasts').appendChild(t);
+  setTimeout(() => { t.classList.add('out'); setTimeout(() => t.remove(), 400); }, 4200);
+}
+function showAlert(el, title, body, ok) {
+  el.className = 'alert show' + (ok ? ' alert--ok' : ' alert--err');
+  el.innerHTML = '<b></b><span></span>';
+  el.firstChild.textContent = title; el.lastChild.textContent = body;
+  el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+function setErr(input, msg) {
+  const f = input.closest('.field'); if (!f) return;
+  f.classList.toggle('has-error', !!msg);
+  const e = $('.err', f); if (e) e.textContent = msg || '';
+}
+function clearErrs(form) { $$('.field', form).forEach(f => { f.classList.remove('has-error'); }); }
+function cleanPhone(v) { return String(v).replace(/\D/g, '').replace(/^0+/, ''); }
+function validPhone(code, num) {
+  const n = cleanPhone(num);
+  return code === '+91' ? /^[6-9]\d{9}$/.test(n) : /^\d{6,14}$/.test(n);
+}
+async function api(payload) {
+  if (IS_DEMO) throw new Error('DEMO');
+  // text/plain avoids a CORS preflight, which Apps Script cannot answer
+  const res = await fetch(CONFIG.SCRIPT_URL, {
+    method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload), redirect: 'follow'
+  });
+  return res.json();
+}
+async function apiGet(action) {
+  const res = await fetch(CONFIG.SCRIPT_URL + '?action=' + action, { redirect: 'follow' });
+  return res.json();
+}
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+/* ===================== NAV / REVEAL / YEAR ===================== */
+const nav = $('#nav'), navLinks = $('#navLinks'), navToggle = $('#navToggle');
+addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', scrollY > 20), { passive: true });
+navToggle.addEventListener('click', () => {
+  const o = navLinks.classList.toggle('open'); navToggle.setAttribute('aria-expanded', o);
+});
+$$('a', navLinks).forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('open'); navToggle.setAttribute('aria-expanded', 'false'); }));
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 }) : null;
+$$('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+$('#year').textContent = new Date().getFullYear();
+
+/* ===================== SLOTS ===================== */
+function renderSlots(left) {
+  let total = 0;
+  Object.keys(CONFIG.CAMPAIGN).forEach(k => {
+    const c = CONFIG.CAMPAIGN[k];
+    const n = Math.max(0, left && left[k] != null ? +left[k] : c.slots);
+    if (c.enabled) total += c.slots;
+    $$('[data-slot-left="' + k + '"]').forEach(e => e.textContent = n);
+    $$('[data-slot-card="' + k + '"]').forEach(e => { e.hidden = !c.enabled; });
+  });
+  $('#freeSlotTotal').textContent = total;
+}
+renderSlots();
+(async () => { if (IS_DEMO) return; try { const d = await apiGet('slots'); if (d && d.ok) renderSlots(d.left); } catch (e) {} })();
+
+/* ===================== APPLY FORM ===================== */
+const applyForm = $('#applyForm');
+const enabled = Object.keys(CONFIG.CAMPAIGN).filter(k => CONFIG.CAMPAIGN[k].enabled);
+$$('[data-service-option]').forEach(l => { if (!enabled.includes(l.dataset.serviceOption)) l.hidden = true; });
+function currentService() { return ($('input[name="service"]:checked', applyForm) || {}).value || enabled[0]; }
+function syncService() {
+  const s = currentService();
+  $('#groupBirth').hidden = s !== 'birth_report';
+  $('#groupPrashna').hidden = s !== 'prashna_kundli';
+}
+$$('input[name="service"]', applyForm).forEach(r => r.addEventListener('change', syncService));
+syncService();
+$('#demoNote').hidden = !IS_DEMO;
+
+applyForm.addEventListener('submit', async e => {
+  e.preventDefault();
+  clearErrs(applyForm);
+  const f = id => $('#' + id);
+  const svc = currentService();
+  let bad = false;
+  const need = (id, msg) => { if (!f(id).value.trim()) { setErr(f(id), msg); bad = true; } };
+  need('fullName', 'Please enter your name');
+  if (!validPhone(f('countryCode').value, f('phone').value)) { setErr(f('phone'), 'Enter a valid mobile number'); bad = true; }
+  if (svc === 'prashna_kundli') { need('question', 'Please write your question'); need('city', 'Required'); }
+  else { need('dob', 'Required'); need('tob', 'Required'); need('placeOfBirth', 'Required'); }
+  if (!f('consent').checked) { toast('Please accept the consent checkbox', 'error'); bad = true; }
+  if (bad) return;
+
+  const btn = f('applySubmit');
+  const data = {
+    action: 'apply', service: svc,
+    fullName: f('fullName').value.trim(),
+    phone: f('countryCode').value + ' ' + cleanPhone(f('phone').value),
+    question: f('question').value.trim(), city: f('city').value.trim(),
+    state: f('state').value.trim(), country: f('country').value.trim(),
+    dob: f('dob').value, tob: f('tob').value,
+    placeOfBirth: f('placeOfBirth').value.trim(), language: f('language').value,
+    website: (applyForm.querySelector('[name="website"]') || {}).value || '' // honeypot
+  };
+  btn.classList.add('is-loading'); btn.disabled = true;
+  try {
+    const r = await api(data);
+    if (r.ok) {
+      showAlert($('#applyAlert'), 'Application received 🙏', 'We will contact you on WhatsApp on our free slots. Thank you!', true);
+      applyForm.reset(); syncService(); if (r.left) renderSlots(r.left);
+    } else showAlert($('#applyAlert'), 'Could not submit', r.error || 'Please try again.', false);
+  } catch (err) {
+    if (err.message === 'DEMO') showAlert($('#applyAlert'), 'Demo mode', 'Set CONFIG.SCRIPT_URL to go live.', false);
+    else showAlert($('#applyAlert'), 'Network error', 'Please check your connection and try again.', false);
+  } finally { btn.classList.remove('is-loading'); btn.disabled = false; }
+});
+
+/* ===================== CONNECT MODAL ===================== */
+const modal = $('#connectModal'), connectForm = $('#connectForm');
+let connectSvc = '';
+function openModal(label) {
+  connectSvc = label; $('#connectService').textContent = label;
+  modal.classList.add('open'); modal.setAttribute('aria-hidden', 'false');
+  setTimeout(() => $('#leadName').focus(), 50);
+}
+function closeModal() { modal.classList.remove('open'); modal.setAttribute('aria-hidden', 'true'); }
+$$('[data-connect]').forEach(b => b.addEventListener('click', () => {
+  const h = b.closest('.service'); openModal(h ? $('h3', h).textContent : 'General enquiry');
+}));
+$$('[data-close]', modal).forEach(b => b.addEventListener('click', closeModal));
+addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+connectForm.addEventListener('submit', async e => {
+  e.preventDefault(); clearErrs(connectForm);
+  const name = $('#leadName'), code = $('#leadCountryCode'), ph = $('#leadPhone');
+  let bad = false;
+  if (!name.value.trim()) { setErr(name, 'Please enter your name'); bad = true; }
+  if (!validPhone(code.value, ph.value)) { setErr(ph, 'Enter a valid mobile number'); bad = true; }
+  if (bad) return;
+  const btn = $('#connectSubmit'); btn.classList.add('is-loading'); btn.disabled = true;
+  try {
+    const r = await api({ action: 'lead', service: connectSvc, fullName: name.value.trim(),
+      phone: code.value + ' ' + cleanPhone(ph.value), message: $('#leadMessage').value.trim() });
+    if (r.ok) { toast('Request sent. We will reply on WhatsApp.', 'success'); connectForm.reset(); closeModal(); }
+    else showAlert($('#connectAlert'), 'Could not send', r.error || 'Please try again.', false);
+  } catch (err) {
+    showAlert($('#connectAlert'), err.message === 'DEMO' ? 'Demo mode' : 'Network error',
+      err.message === 'DEMO' ? 'Set CONFIG.SCRIPT_URL to go live.' : 'Please try again.', false);
+  } finally { btn.classList.remove('is-loading'); btn.disabled = false; }
+});
+
+/* ===================== REVIEWS ===================== */
+function renderReviews(list) {
+  const box = $('#reviewList');
+  if (!list || !list.length) { box.innerHTML = '<p class="empty">No reviews yet. Be the first to share.</p>'; $('#avgRating').textContent = '—'; $('#reviewCount').textContent = 0; return; }
+  const avg = list.reduce((a, r) => a + (+r.rating || 0), 0) / list.length;
+  $('#avgRating').textContent = avg.toFixed(1); $('#reviewCount').textContent = list.length;
+  box.innerHTML = list.map(r => `<article class="review glass"><div class="review__head">
+    <span class="review__avatar">${esc((r.name || '?')[0].toUpperCase())}</span>
+    <div><strong>${esc(r.name)}</strong><small>${esc(r.city)}</small></div></div>
+    <div class="review__stars">${'★'.repeat(+r.rating)}${'☆'.repeat(5 - +r.rating)}</div>
+    <p class="review__text">${esc(r.message)}</p></article>`).join('');
+}
+(async () => {
+  if (IS_DEMO) return renderReviews([]);
+  try { const d = await apiGet('reviews'); renderReviews(d.ok ? d.reviews : []); } catch (e) { renderReviews([]); }
+})();
+$$('#starInput button').forEach(b => b.addEventListener('click', () => {
+  $('#ratingValue').value = b.dataset.value;
+  $$('#starInput button').forEach(x => x.classList.toggle('on', +x.dataset.value <= +b.dataset.value));
+}));
+$('#reviewForm').addEventListener('submit', async e => {
+  e.preventDefault(); const form = e.target; clearErrs(form);
+  const rating = +$('#ratingValue').value, n = $('#reviewName'), c = $('#reviewCity'), m = $('#reviewMessage');
+  let bad = false;
+  if (!rating) { setErr($('#ratingValue'), 'Please pick a rating'); bad = true; }
+  if (!n.value.trim()) { setErr(n, 'Required'); bad = true; }
+  if (!c.value.trim()) { setErr(c, 'Required'); bad = true; }
+  if (m.value.trim().length < 10) { setErr(m, 'Please write at least 10 characters'); bad = true; }
+  if (bad) return;
+  const btn = $('#reviewSubmit'); btn.classList.add('is-loading'); btn.disabled = true;
+  try {
+    const r = await api({ action: 'review', rating, name: n.value.trim(), city: c.value.trim(), message: m.value.trim() });
+    if (r.ok) { toast('Thank you! Your review will appear after approval.', 'success'); form.reset(); $$('#starInput button').forEach(x => x.classList.remove('on')); $('#ratingValue').value = 0; }
+    else showAlert($('#reviewAlert'), 'Could not post', r.error || 'Try again.', false);
+  } catch (err) { showAlert($('#reviewAlert'), 'Unavailable', err.message === 'DEMO' ? 'Demo mode: set CONFIG.SCRIPT_URL.' : 'Network error.', false); }
+  finally { btn.classList.remove('is-loading'); btn.disabled = false; }
+});
+</script>
+</body>
+</html>
